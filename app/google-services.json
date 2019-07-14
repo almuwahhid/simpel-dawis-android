@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "672796657881",
+    "firebase_url": "https://simpel-dawis.firebaseio.com",
+    "project_id": "simpel-dawis",
+    "storage_bucket": "simpel-dawis.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:672796657881:android:c41c7f922447132d",
+        "android_client_info": {
+          "package_name": "id.ac.akakom.pkm.simpeldawis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "672796657881-mhid4g4qq2p4mlag3o0hlap3usegsrh7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.ac.akakom.pkm.simpeldawis",
+            "certificate_hash": "12897d8c8686a24edacf1998ed5053c8788aaa40"
+          }
+        },
+        {
+          "client_id": "672796657881-ukhj5upda9cbusn4q37fcjb23ifs37me.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrdPAKoHGoAa1t1gHqCAQFr7MzM4pHE3w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "672796657881-ukhj5upda9cbusn4q37fcjb23ifs37me.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

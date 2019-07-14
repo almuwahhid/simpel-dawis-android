@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu.login.LoginActivity">
+    <com.flaviofaria.kenburnsview.KenBurnsView
+        android:id="@+id/kenburns_effect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/kaliopak"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_trans_bg" />
+    <ImageView
+        android:layout_above="@+id/lay_login"
+        android:layout_centerHorizontal="true"
+        android:layout_width="@dimen/dimen_160dp"
+        android:layout_height="@dimen/dimen_160dp"
+        android:src="@drawable/logo"/>
+    <LinearLayout
+        android:padding="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_56dp"
+        android:id="@+id/lay_login"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:drawableLeft="@drawable/ic_user"
+            android:drawableTint="@color/grey_500"
+
+            android:id="@+id/edt_username"
+            style="@style/EditText.Border"
+            android:hint="Username"
+            android:inputType="text"
+            android:background="@drawable/background_form_border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.scottyab.showhidepasswordedittext.ShowHidePasswordEditText
+            android:drawableTint="@color/grey_500"
+            android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+            android:id="@+id/edt_password"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            style="@style/EditText.Border"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:background="@drawable/background_form_border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn"
+            android:textColor="@color/white"
+            android:text="Masuk"
+            android:layout_marginTop="@dimen/dimen_48dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_gradient"/>
+        <TextView
+            android:clickable="true"
+            android:id="@+id/tv_lupapassword"
+            android:textColor="@color/red_800"
+            android:text="Lupa password ?"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            style="@style/Text.Standard.OneRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include layout="@layout/layout_helper"/>
+</RelativeLayout>

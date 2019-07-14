@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/lay_dialog"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:padding="@dimen/dimen_16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Foto Profil"
+                android:id="@+id/tv_title"
+                android:layout_centerVertical="true"
+                style="@style/TextInTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/img_ok"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_check_black_24dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/dimen_16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <id.ac.akakom.pkm.simpeldawis.utils.avatarview.views.AvatarView
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/avatarView"
+                android:layout_width="@dimen/dimen_140dp"
+                android:layout_height="@dimen/dimen_140dp" />
+            <android.support.v7.widget.CardView
+                android:id="@+id/btn"
+                app:cardBackgroundColor="@color/blue_400"
+                style="@style/clickable"
+                app:cardCornerRadius="@dimen/dimen_20dp"
+                android:layout_marginLeft="-40dp"
+                android:layout_marginTop="-42dp"
+                android:layout_toRightOf="@+id/avatarView"
+                android:layout_marginRight="@dimen/dimen_4dp"
+                android:layout_marginBottom="@dimen/dimen_4dp"
+                android:layout_below="@+id/avatarView"
+                android:layout_width="@dimen/dimen_40dp"
+                android:layout_height="@dimen/dimen_40dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:tint="@color/white"
+                        android:src="@drawable/ic_photo_camera_black_24dp"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+            <!--<android.support.design.widget.FloatingActionButton
+
+                app:backgroundTint="@color/blue_200"
+                android:layout_marginLeft="-12dp"
+                android:layout_marginTop="-24dp"
+                android:layout_toRightOf="@+id/avatarView"
+                android:layout_marginRight="@dimen/dimen_4dp"
+                android:layout_marginBottom="@dimen/dimen_4dp"
+                android:layout_below="@+id/avatarView"
+                android:layout_width="@dimen/dimen_40dp"
+                android:src="@drawable/camera"
+                android:layout_height="@dimen/dimen_40dp" />-->
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

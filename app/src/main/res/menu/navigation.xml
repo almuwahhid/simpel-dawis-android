@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_notifikasi"
+        android:icon="@drawable/ic_notifications_active_black_24dp"
+        android:title="Rental" />
+
+    <item
+        android:id="@+id/nav_sop"
+        android:icon="@drawable/ic_sop"
+        android:title="SOP" />
+
+    <item
+        android:id="@+id/nav_akun"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        android:title="Akun" />
+
+
+
+</menu>

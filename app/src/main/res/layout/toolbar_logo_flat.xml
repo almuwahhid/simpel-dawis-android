@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.AppBarLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="0dp"
+    android:stateListAnimator="@null"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <id.ac.akakom.pkm.simpeldawis.utils.BaseToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_56dp"
+        android:background="@drawable/bg_home_gradient"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/dimen_16dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/ic_logo"
+                android:layout_width="@dimen/dimen_40dp"
+                android:layout_height="@dimen/dimen_40dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/logo" />
+        </LinearLayout>
+    </id.ac.akakom.pkm.simpeldawis.utils.BaseToolbar>
+
+</android.support.design.widget.AppBarLayout>

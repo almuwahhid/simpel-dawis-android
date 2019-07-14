@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/lay_dialog"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:padding="@dimen/dimen_16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/img_logo"
+                android:src="@drawable/ic_file"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="@dimen/dimen_8dp"
+                android:layout_toRightOf="@+id/img_logo"
+                android:text="Download Laporan"
+                android:id="@+id/tv_title"
+                android:layout_centerVertical="true"
+                style="@style/TextInTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/img_ok"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_close_black_24dp"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/dimen_16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_gravity="center_horizontal"
+                style="@style/Text.Caption"
+                android:text="12 Januari 2019"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_marginLeft="@dimen/dimen_56dp"
+                android:layout_marginRight="@dimen/dimen_56dp"
+                android:textAlignment="center"
+                android:text="Laporan Keuangan Maret"
+                style="@style/Text.Title"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btn"
+                android:layout_marginTop="@dimen/dimen_12dp"
+                android:layout_gravity="center_horizontal"
+                android:text="D O W N L O A D"
+                android:textColor="@color/white"
+                android:background="@drawable/button_gradient"
+                android:layout_width="@dimen/dimen_128dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
